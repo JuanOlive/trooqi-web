@@ -12,7 +12,14 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      textShadow: {
+        default: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+        lg: '4px 4px 8px rgba(0, 0, 0, 0.5)',
+        xl: '6px 6px 12px rgba(0, 0, 0, 0.5)',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow'),
+  ],
 } satisfies Config;
