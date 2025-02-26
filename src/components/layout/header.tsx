@@ -11,10 +11,10 @@ export default function Header() {
 
 
     return (
-        <div className="fixed flex justify-between px-5 items-center gap-3 border-b-gray-300 border w-screen bg-[#fff8e7] ">
+        <div className="fixed flex justify-between px-5 items-center w-screen bg-[#2e241e] pr-16">
             
             <Link href={"/"}>
-            <Image alt="Logo" src={'/images/trooqilogo.png'} width={110} height={150} />
+            <Image alt="Logo" src={'/images/logotrooqi2.png'} width={110} height={150} />
             </Link>
             
 

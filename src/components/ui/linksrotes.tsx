@@ -12,24 +12,24 @@ export default function BotoesHeader() {
             
             {/* Meu carrinho */}
             <Link href={'/carrinho'}>
-            <button className="text-[#875a38] hover:text-amber-900 transition-all duration-300"> <ShoppingCart size={33}/> </button>
+            <button className="text-[#fff8e7] hover:text-amber-900 transition-all duration-300"> <ShoppingCart size={33}/> </button>
             </Link>
 
 
             {/* notificações */}
             <Link href={'/notificacoes'}>
-            <button className="text-[#875a38] hover:text-amber-900 transition-all duration-300"> <Bell size={33}/> </button>
+            <button className="text-[#fff8e7] hover:text-amber-900 transition-all duration-300"> <Bell size={33}/> </button>
             </Link>
 
 
             <Link href={'/anuncios'}>
-            <button className="text-[#875a38] hover:text-amber-900 transition-all duration-300"> <Tag size={33}/> </button>
+            <button className="text-[#fff8e7] hover:text-amber-900 transition-all duration-300"> <Tag size={33}/> </button>
             </Link>
 
 
             {/* quero vender */}
             <Link href={'/querovender'}>
-            <button className="bg-[#875a38] text-white font-semibold p-5 rounded-2xl "> Quero Trocar </button>
+            <button className="bg-[#fff8e7] hover:bg-[#ffcb7c] text-[#2e241e] font-semibold p-5 rounded-2xl transition-all duration-300"> Quero Trocar </button>
             </Link>
 
 

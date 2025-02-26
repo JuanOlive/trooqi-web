@@ -14,13 +14,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className=''>
+    <html lang="pt-br">
+      <body className='bg-[#fffbf1]'>
         {/* Adicione o Header aqui */}
         <Header />
 
         {/* Conteúdo das páginas */}
-        <main className="container mx-auto p-4">
+        <main className="container mx-auto p-4 pt-32">
           {children}
         </main>
       </body>
