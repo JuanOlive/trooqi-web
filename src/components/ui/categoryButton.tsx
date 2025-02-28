@@ -12,7 +12,7 @@ export default function Dropdown() {
     <div className="relative transition-all duration-300" >
       {/* Botão */}
        
-      <button onClick={() => setIsOpen(!isOpen)} className="flex items-center text-[#fff8e7] text-shadow-sm font-semibold px-4 py-2 rounded-lg focus:outline-none transition-all duration-300 outline-none">
+      <button onClick={() => setIsOpen(!isOpen)} className="flex items-center text-[#fff8e7] hover:text-[#ffcb7c] text-shadow-sm font-semibold px-4 py-2 rounded-lg focus:outline-none transition-all duration-300 outline-none">
          Oque deseja?
 
          {isOpen ? (
