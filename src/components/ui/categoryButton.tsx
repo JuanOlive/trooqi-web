@@ -9,7 +9,7 @@ export default function Dropdown() {
   
 
   return (
-    <div className="relative transition-all duration-300" >
+    <div className="relative transition-all duration-300 z-50" >
       {/* Botão */}
        
       <button onClick={() => setIsOpen(!isOpen)} className="flex items-center text-[#fff8e7] hover:text-[#ffcb7c] text-shadow-sm font-semibold px-4 py-2 rounded-lg focus:outline-none transition-all duration-300 outline-none">
@@ -23,7 +23,7 @@ export default function Dropdown() {
       </button>
 
       {isOpen && (
-        <div className="absolute mt-2 p-4 bg-white shadow-lg rounded-lg w-48 z-10 transition-all duration-300">
+        <div className="absolute mt-2 p-4 bg-[#faf6ee] shadow-lg rounded-lg w-48 z-50 transition-all duration-300">
           <a href="#" className="block px-4 py-2 rounded-lg text-gray-500 hover:text-black transition-all duration-300">Eletrônicos</a>
           
         </div>

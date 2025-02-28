@@ -11,7 +11,7 @@ export default function Header() {
 
 
     return (
-        <div className="fixed flex justify-between px-5 items-center w-screen bg-[#382c24] pr-16">
+        <div className="fixed flex justify-between px-5 items-center w-screen bg-[#382c24] z-50 pr-16">
             
             <Link href={"/"}>
             <Image alt="Logo" src={'/images/logotrooqi3.png'} width={110} height={150} />

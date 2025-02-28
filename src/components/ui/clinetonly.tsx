@@ -10,13 +10,16 @@ export default function ClientLayout({
 }) {
   const pathname = usePathname();
 
-  // Verifica se a rota atual é a de login
-  const isLoginPage = pathname === '/login';
+  // Lista de rotas onde a Header não deve ser exibida
+  const noHeaderPages = ['/login', '/register', '/forgot-password', '/reset-password'];
+
+  // Verifica se a rota atual está na lista de rotas sem Header
+  const isNoHeaderPage = noHeaderPages.includes(pathname);
 
   return (
     <>
-      {/* Renderiza a Header apenas se não for a página de login */}
-      {!isLoginPage && <Header />}
+      {/* Renderiza a Header apenas se não for uma página sem Header */}
+      {!isNoHeaderPage && <Header />}
       {children}
     </>
   );
