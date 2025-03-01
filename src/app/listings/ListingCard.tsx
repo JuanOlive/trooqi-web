@@ -26,8 +26,8 @@ const ListingCard: React.FC<ListingCardProps> = ({ images, titles }) => {
   };
 
   return (
-    <div className="relative flex flex-col items-center">
-      <div className="relative w-full max-w-[1100px] overflow-hidden">
+    <div className="relative flex flex-col items-center ">
+      <div className="relative w-full max-w-[1100px] overflow-hidden shadow-2xl">
         {/* Botão de navegação esquerda */}
         <button
           className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full z-10"
@@ -53,7 +53,7 @@ const ListingCard: React.FC<ListingCardProps> = ({ images, titles }) => {
                 quality={100}
                 src={image}
                 alt={titles[index]}
-                className="object-cover rounded-2xl"
+                className="object-cover rounded-2xl shadow-2xl"
                 width={1200}
                 height={500}
               />

@@ -4,15 +4,14 @@ import Header from "@/components/layout/header";
 import Image from "next/image";
 import ListingCard from "../../listings/ListingCard";
 import produtos from "@/services/utilsTest/Recomendedproducts";
-import { Items } from "@/components/layout/itens";
 
 export default function Home() {
 
   const images = [
     '/images/anuncio3.png',
     '/images/anuncio4.png',
-    '/images/anuncio4.png',
     '/images/anuncio3.png',
+    '/images/anuncio4.png',
   ];
   
   const titles = [
