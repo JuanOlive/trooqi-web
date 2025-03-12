@@ -1,9 +1,6 @@
 
 'use client'
-import Header from "@/components/layout/header";
-import Image from "next/image";
 import ListingCard from "../../listings/ListingCard";
-import produtos from "@/services/utilsTest/Recomendedproducts";
 
 export default function Home() {
 

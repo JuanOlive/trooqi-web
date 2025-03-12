@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/layout/header";
-import ClientLayout from "@/components/ui/clinetonly";
+import ClientLayout from "./components/ui/clinetonly";
 
 export const metadata: Metadata = {
   title: "Trooqi - Troquei e saí feliz",
@@ -16,14 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className='bg-[#d8d1c1] '>
-        {/* Adicione o Header aqui */}
-        <ClientLayout children /> 
-
-        {/* Conteúdo das páginas */}
-        <main className="container mx-auto pt-32">
+      <body className='bg-[#fbf4e3]'>
+        {/* Passa o children para o ClientLayout */}
+        <ClientLayout>
           {children}
-        </main>
+        </ClientLayout>
       </body>
     </html>
   );

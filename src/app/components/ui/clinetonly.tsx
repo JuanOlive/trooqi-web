@@ -20,7 +20,11 @@ export default function ClientLayout({
     <>
       {/* Renderiza a Header apenas se não for uma página sem Header */}
       {!isNoHeaderPage && <Header />}
-      {children}
+
+      {/* Conteúdo das páginas com pt-32 condicional */}
+      <main className={!isNoHeaderPage ? 'container mx-auto pt-32' : 'container mx-auto'}>
+        {children}
+      </main>
     </>
   );
 }
